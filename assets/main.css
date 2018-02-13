@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css?family=Ceviche+One|Playfair+Display+SC:400,700');
+
+body{
+    background: url('images/indy.jpg');
+    background-size: cover;
+    box-sizing: border-box;
+    background-repeat: no-repeat;
+}
+
+.textured-bg{
+    background-color: tan;
+    background: url('images/textured-bg.jpg');
+    background-size: cover;
+    border: 2px solid tan;
+    width: 100%;
+}
+
+.gem-area{
+    display: inline-block;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+    font-family: "Ceviche One";
+}
+
+h1{
+    text-align: center;
+    font-family: "Ceviche One";
+    font-size: 80px;
+    color: #fcfcfc;
+    text-shadow: 2px 7px #111, 1px 6px #222;
+}
+
+h2{
+    text-align: center;
+    font-size: 24px;
+    display: inline-block;
+    margin: 0 auto;
+    padding: 14px 16px;
+    font-family: "Playfair Display SC";
+    background-color: #312613;
+    border: 2px solid tan;
+    color: white;
+    margin-top: 180px;
+    border-radius: 4px;
+    margin-left: 30px;
+    margin-right: 30px;
+    text-align: center;
+}
+
+h5{
+    margin-top: 0px;
+    font-size: 28px;
+    margin-bottom: 10px;
+    color: #111;
+    text-shadow: 1px 1px #999;
+    font-family: "Ceviche One";
+    text-align: center;
+}
+
+.gems{
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    text-align: center;
+    margin: 0 auto;
+    clear: both;
+    overflow: auto;
+    display: block;
+
+}
+
+.gem{
+    padding: 20px;
+    display: inline-block;
+    background-color: #444;
+    border: 6px inset #333;
+    text-align: center;
+}
+
+.gems li{
+    margin-bottom: 10px;
+}
+
+.gems li:last-child{
+    margin-bottom: 0px;
+}
+
+.gem img{
+    width: 50px;
+}
+
+.game-tracker{
+    padding: 20px 0px;
+    display: inline-block;
+    list-style-type: none;
+    margin-top: 20px;
+}
+
+.game-tracker ul{
+    list-style-type: none;
+    padding: 0px 20px;
+    margin: 0px;
+    font-weight: bold;
+    font-family: "Playfair Display SC";
+}
+
+.game-tracker ul li{
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.game-tracker ul li span{
+    position: absolute;
+    right: 0;
+    font-family: "Ceviche One";
+    font-size: 20px;
+}
+
+.left-column{
+    height: 100%;
+    width: 161px;
+    display: inline-block;
+    width: 20%;
+    float: left;
+}
+
+.right-column{
+    height: 100%;
+    width: 181px;
+    display: inline-block;
+    float: right;
+    width: 20%;
+}
+
+.middle-column{
+    display: inline-block;
+    margin: 0 auto;
+    width: 600px;
+    width: 60%;
+    float: left;
+    text-align: center;
+}
+
+.score-area{
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+
+.score-area span{
+    font-size: 48px;
+    font-family: "Ceviche One";
+}
+
+.actions button{
+    padding: 10px 30px;
+    background-color: transparent;
+    border: 2px solid #222;
+    font-family: "Playfair Display SC";
+    font-size: 20px;
+    font-weight: bold;
+    color: #222;
+    cursor: pointer;
+}
+
+.actions button:hover{
+    background-color: tan;
+}
+
+.phrases{
+    display: none;
+}
