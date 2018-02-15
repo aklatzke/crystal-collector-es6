@@ -41,7 +41,7 @@ $(function(){
             elements[prop].text(value);
             // If the prop is wins or losses, then we want to update localStorage
             if( ["wins", "losses"].indexOf(prop) !== -1 )
-                localStorage.prop = value;
+                localStorage[prop] = value;
             // Call the reflector so that the object itself updates
             return Reflect.set(target, prop, value)
         }
