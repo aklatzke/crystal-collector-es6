@@ -40,7 +40,7 @@ $(function(){
             // it's obvious enough if something is amiss between the two (as nothing will work!)
             elements[prop].text(value);
             // If the prop is wins or losses, then we want to update localStorage
-            if( ["wins", "losses"].find(prop) )
+            if( ["wins", "losses"].indexOf(prop) !== -1 )
                 localStorage.prop = value;
             // Call the reflector so that the object itself updates
             return Reflect.set(target, prop, value)
@@ -81,7 +81,7 @@ $(function(){
         state.current += $(this).data('value');
         // If we've exceeded the target, we lose.
         if( state.current > state.target ){
-            log.losses++;
+            state.losses++;
             // Choose a random phrase from the array and show it.
             elements.phrases.text( 
                 phrases.loss[Math.floor(Math.random() * phrases.loss.length)] 
@@ -91,7 +91,7 @@ $(function(){
         }
         // If we've reached the target, we win!
         else if( state.current === state.target ){
-            log.wins++;
+            state.wins++;
             elements.phrases.text( 
                 phrases.win[Math.floor(Math.random() * phrases.win.length)] 
             ).show();
